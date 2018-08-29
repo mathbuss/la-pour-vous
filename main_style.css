@@ -159,6 +159,200 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -215,166 +409,250 @@ table {
     font-style: normal;
 }
 
-* {}
-
-body {
-    background-image: url(images/fond-page-web-oeillets.jpg);
-    background-attachment: fixed;
+* {
+    font-family: 'ambleregular', Verdana, sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+/* Eléments principaux de la page */
+
+body {}
+
 main {
-    margin-top: 30px;
-    width: 900px;
-    padding-right: 20px;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+nav a {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/* Header */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#master_title {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 59px;
+    height: 60px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 10px 10px;
+    color: purple;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px purple;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-top: 2px;
+    margin-left: 2px;
+
+    font-weight: normal;
+    color: purple;
+}
+
+
+
+
+
+
+
+
+/* Navigation */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: purple;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+
+
+
+
+
+
+/* Bannière */
+
+#banner {
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/concierge-image.jpg') no-repeat;
+    position: relative;
+
+    margin-bottom: 25px;
+}
+
+#banner_description {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    width: 99.6%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 14px;
+    background-color: rgba(24, 24, 24, 0.6);
+    color: white;
+    font-size: 0.8em;
+}
+
+.purple_button {
+    height: 25px;
+    position: absolute;
+    right: 55px;
+    bottom: 5px;
+    background: url('images/fond_violet.jpg') repeat-x;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: right;
+    padding: 8px 8px 0px 8px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img {
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Corps */
+
+section {
+    display: flex;
+    margin-bottom: 20px;
     padding-left: 20px;
 }
 
-header {
-
-
-    border: 3px purple inset;
-    border-radius: 20px;
-    background-color: #F2C4F2;
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-end;
-    padding-top: 40px;
+article,
+aside {
+    text-align: left;
+    font-size: 1.4em;
+    line-height: 22px;
 }
 
-h1 {
-    color: purple;
-    text-decoration: underline;
-    text-align: center;
-    text-shadow: 20px 3px 9px #E874E6;
-    font-size: 3em;
-    font-family: 'ambleregular', Verdana, sans-serif;
-    margin-left: 120px;
-    margin-top: 5px;
+article {
+    margin-right: 20px;
+    flex: 3;
 }
 
-img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-left: 15px;
+.ico_categorie {
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
-li {
-    margin: 8px 8px 8px 8px;
-}
-
-a {
-    text-decoration: unset;
-    color: purple;
-}
-
-a:hover {
-    font-size: 1.3em;
-}
-
-a:visited {
-    color: red;
-}
-
-nav {
-
-    text-align: center;
-    color: purple;
-    border: 3px purple inset;
-    height: 150px;
-    min-height: 150px;
-    width: 120px;
-    min-width: 120px;
-    border-radius: 20px;
-    background-color: #F2C4F2;
-    padding: auto;
-    margin: auto;
-    font-family: 'ambleregular', Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-section {
-    color: purple;
-    background-color: rgba(250, 250, 250, 0.5);
-    border: 2px solid purple;
-    border-radius: 20px;
-    text-align: justify;
-    margin: 20px 0px 20px 20px;
-    padding: 10px 10px 0px 10px;
-    height: 400px;
-    font-family: 'ambleregular', Verdana, sans-serif;
+article p {
+    font-size: 0.8em;
 }
 
 aside {
-    border: 9px outset purple;
-    border-radius: 20px;
-    max-height: 310px;
-    width: 35%;
-    min-width: 190px;
-    text-align: justify;
-    background-color: white;
-    padding: auto;
-    overflow: auto;
-    clear: both;
-    float: right;
-    margin: 30px 10px 10px 10px;
-    background-attachment: fixed;
-    font-family: 'Indie Flower', cursive;
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle {
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor {
+    text-align: center;
+}
+
+#photo_zozor img {
+    border: 1px solid #181818;
+}
+
+aside img {
+    margin-right: 5px;
 }
 
 
+
+
+
+
+
+
+/* bas de page */
 
 footer {
-    background-color: black;
-    padding-top: 30px;
-    text-align: center;
-    margin-top: 111px;
-    `font-family: 'ambleregular', Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-p {
-
-    margin: 1px 5px 20px 5px;
-}
-
-footer a {
+    background-color: #706b64;
     color: white;
-}
-
-
-.floatleft {
-    float: left;
-    margin-top: -20px;
-    margin-right: 50px;
-}
-
-.container {
-    display: flex;
-}
-
-.scroll {
-    overflow: scroll;
-    margin: 10px 10px 20px 10px;
-}
-
-.container2 {
-
-    margin-left: 150px;
-    margin-top: 50px;
-}
-
-
-#containerNav {
-
-    max-width: 150px;
-    margin-top: 50px;
-
-    position: fixed;
+    text-align: justify;
 }
