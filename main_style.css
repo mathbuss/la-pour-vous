@@ -95,6 +95,10 @@ video {
 
 
 
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -226,7 +230,6 @@ section {
     border: 2px solid purple;
     border-radius: 20px;
     text-align: justify;
-    overflow: scroll;
     margin: 20px 0px 20px 20px;
     padding: 10px 10px 0px 10px;
     height: 400px;
@@ -282,6 +285,11 @@ footer a {
 
 .container {
     display: flex;
+}
+
+.scroll {
+    overflow: scroll;
+    margin: 10px 10px 20px 10px;
 }
 
 .container2 {
