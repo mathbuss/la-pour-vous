@@ -99,6 +99,59 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -160,24 +213,39 @@ table {
 body {
     background-image: url(images/fond-page-web-oeillets.jpg);
     background-attachment: fixed;
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 header {
 
-    font-family: 'ambleregular', Verdana, sans-serif;
+
+    border: 3px purple inset;
+    border-radius: 20px;
+    background-color: #F2C4F2;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    padding-top: 40px;
 }
 
 h1 {
     color: purple;
     text-decoration: underline;
-    margin-left: 170px;
     text-align: center;
-    border: 3px purple inset;
-    border-radius: 20px;
-    background-color: #F2C4F2;
     text-shadow: 20px 3px 9px #E874E6;
-    font-size: 2em
+    font-size: 3em;
+    font-family: 'ambleregular', Verdana, sans-serif;
+    margin-left: 120px;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 15px;
 }
 
 li {
@@ -208,7 +276,6 @@ nav {
     min-width: 120px;
     border-radius: 20px;
     background-color: #F2C4F2;
-    overflow: auto;
     padding: auto;
     margin: auto;
     font-family: 'ambleregular', Verdana, sans-serif;
@@ -216,12 +283,6 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
-}
-
-
-img {
-    max-width: 100px;
-    margin-left: 15px;
 }
 
 section {
@@ -295,7 +356,7 @@ footer a {
 .container2 {
 
     margin-left: 150px;
-    margin-top: -180px;
+    margin-top: 50px;
 }
 
 
@@ -303,4 +364,6 @@ footer a {
 
     max-width: 150px;
     margin-top: 50px;
+
+    position: fixed;
 }
