@@ -353,6 +353,7 @@ video {
 
 
 
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -422,6 +423,7 @@ table {
 
 
 
+
 /* Eléments principaux de la page */
 
 body {}
@@ -437,6 +439,7 @@ nav a {
     font-weight: normal;
     text-transform: uppercase;
 }
+
 
 
 
@@ -501,6 +504,7 @@ header h2 {
 
 
 
+
 /* Navigation */
 
 nav ul {
@@ -523,6 +527,7 @@ nav a:hover {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
+
 
 
 
@@ -575,13 +580,6 @@ nav a:hover {
 .bouton_rouge img {
     border: 0;
 }
-
-
-
-
-
-
-
 
 
 /* Corps */
@@ -641,6 +639,7 @@ aside {
 aside img {
     margin-right: 5px;
 }
+
 
 
 
