@@ -132,228 +132,6 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -424,6 +202,35 @@ table {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Eléments principaux de la page */
 
 body {}
@@ -435,10 +242,22 @@ main {
 }
 
 
-nav a {
-    font-weight: normal;
-    text-transform: uppercase;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -452,50 +271,86 @@ nav a {
 /* Header */
 
 header {
-    background-color: white;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: fixed;
     width: 100%;
+    height: 12%;
     top: 0px;
     left: 0px;
     z-index: 1;
+    padding-bottom: 10px;
+
+    background-color: white;
+    box-shadow: 3px 3px 10px purple;
 }
 
-#master_title {
-    display: flex;
-    flex-direction: column;
-}
+.master_title {}
 
-#logo {
+.logo {
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-#logo img {
+.logo img {
     width: 59px;
     height: 60px;
+    margin-top: 10px;
 }
 
 header h1 {
+
+    position: absolute;
+    top: 20px;
+    left: 70px;
+
+    margin-left: 10px;
+
+    color: purple;
     font-size: 2.5em;
     font-weight: normal;
-    margin: 0 0 10px 10px;
-    color: purple;
     text-decoration: underline;
     text-shadow: 3px 3px 3px purple;
 }
 
 header h2 {
-    font-size: 1.5em;
-    margin-top: 2px;
-    margin-left: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+
+    margin-left: 5px;
 
     font-weight: normal;
     color: purple;
+    font-size: 1.5em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -507,26 +362,63 @@ header h2 {
 
 /* Navigation */
 
+nav {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 15px;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
 }
 
 nav li {
-    margin-right: 15px;
+    margin-left: 10px;
 }
 
 nav a {
+
+
     font-size: 1.3em;
     color: purple;
     padding-bottom: 3px;
     text-decoration: none;
+    font-weight: normal;
+    text-transform: uppercase;
 }
+
 
 nav a:hover {
     color: #760001;
-    border-bottom: 3px solid #760001;
+    font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -538,26 +430,30 @@ nav a:hover {
 
 /* Bannière */
 
-#banner {
-    margin-top: 15px;
-    height: 200px;
+.banner {
+
+    height: 300px;
+    width: 98.5%;
     border-radius: 5px;
     background: url('images/concierge-image.jpg') no-repeat;
     position: relative;
-
+    margin-top: 75px;
     margin-bottom: 25px;
 }
 
-#banner_description {
+.banner_description {
     position: absolute;
     bottom: 0;
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 0px 4px 4px #1c1a19;
     width: 99.6%;
     height: 33px;
     padding-top: 15px;
     padding-left: 14px;
+
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+
     background-color: rgba(24, 24, 24, 0.6);
+
     color: white;
     font-size: 0.8em;
 }
@@ -577,9 +473,42 @@ nav a:hover {
     text-decoration: none;
 }
 
-.bouton_rouge img {
+.purple_button img {
     border: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Corps */
@@ -598,14 +527,10 @@ aside {
 }
 
 article {
-    margin-right: 20px;
+    margin: 20px 20px 20px 10px;
     flex: 3;
 }
 
-.ico_categorie {
-    vertical-align: middle;
-    margin-right: 8px;
-}
 
 article p {
     font-size: 0.8em;
@@ -614,31 +539,62 @@ article p {
 aside {
     flex: 1.2;
     position: relative;
-    background-color: #706b64;
-    box-shadow: 0px 2px 5px #1c1a19;
+
     border-radius: 5px;
-    padding: 10px;
+
+    background-color: #706b64;
+
+    box-shadow: 0px 2px 5px #1c1a19;
+
     color: white;
     font-size: 0.9em;
+    text-align: left;
+    padding: 10px 10px 10px 15px;
 }
 
-#fleche_bulle {
+.fleche_bulle {
     position: absolute;
     top: 100px;
     left: -12px;
 }
 
-#photo_zozor {
+.photo_zozor {
     text-align: center;
 }
 
-#photo_zozor img {
+.photo_zozor img {
+
+    margin-top: : 10px;
     border: 1px solid #181818;
 }
 
 aside img {
-    margin-right: 5px;
+    margin-right: 2px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -651,7 +607,28 @@ aside img {
 /* bas de page */
 
 footer {
+
+    display: flex;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
     background-color: #706b64;
+
     color: white;
     text-align: justify;
+}
+
+footer a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+footer img {
+
+    margin-left: 19px;
 }
