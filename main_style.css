@@ -115,6 +115,24 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -198,6 +216,24 @@ table {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Eléments principaux de la page */
 
 body {}
@@ -207,6 +243,24 @@ main {
     max-width: 1920px;
     margin: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,6 +371,24 @@ header h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Navigation */
 
 nav {
@@ -373,36 +445,27 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Bannière */
 
 .banner {
 
-    height: 300px;
-    width: 98.5%;
+    height: 350px;
+    width: 99%;
     border-radius: 5px;
-    background: url('images/concierge-image.jpg') no-repeat;
+
     position: relative;
-    margin-top: 75px;
+    margin-top: 170px;
     margin-bottom: 25px;
 }
 
 .banner_description {
     position: absolute;
-    bottom: 0;
-    width: 99.6%;
+    top: 520px;
+    width: 98%;
     height: 33px;
     padding-top: 15px;
     padding-left: 14px;
+
 
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 4px 4px #1c1a19;
@@ -452,13 +515,11 @@ nav a:hover {
 
 
 
-
-
-
 /* Corps */
 
 section {
     display: flex;
+    margin-top: 30px;
     margin-bottom: 20px;
     padding-left: 20px;
 }
@@ -530,6 +591,13 @@ aside img {
 
 
 
+
+
+
+
+
+
+
 /* bas de page */
 
 footer {
@@ -558,6 +626,12 @@ footer img {
 
     margin-left: 19px;
 }
+
+
+
+
+
+
 
 
 
