@@ -115,23 +115,6 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -215,22 +198,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Eléments principaux de la page */
 
 body {}
@@ -240,11 +207,6 @@ main {
     max-width: 1920px;
     margin: auto;
 }
-
-
-
-
-
 
 
 
@@ -355,11 +317,6 @@ header h2 {
 
 
 
-
-
-
-
-
 /* Navigation */
 
 nav {
@@ -395,8 +352,6 @@ nav a:hover {
     color: #760001;
     font-weight: bold;
 }
-
-
 
 
 
@@ -500,17 +455,6 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Corps */
 
 section {
@@ -586,24 +530,6 @@ aside img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* bas de page */
 
 footer {
@@ -631,4 +557,30 @@ footer a {
 footer img {
 
     margin-left: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* formulaire de contact */
+
+fieldset {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid purple;
+    background-color: #FAB2B0;
+    color: purple;
 }
