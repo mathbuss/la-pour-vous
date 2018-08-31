@@ -101,38 +101,6 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -209,31 +177,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Eléments principaux de la page */
 
 body {}
@@ -243,34 +186,6 @@ main {
     max-width: 1920px;
     margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -358,37 +273,6 @@ header h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Navigation */
 
 nav {
@@ -424,12 +308,6 @@ nav a:hover {
     color: #760001;
     font-weight: bold;
 }
-
-
-
-
-
-
 
 
 
@@ -494,12 +372,6 @@ nav a:hover {
 .purple_button img {
     border: 0;
 }
-
-
-
-
-
-
 
 
 
@@ -589,15 +461,6 @@ aside img {
 
 
 
-
-
-
-
-
-
-
-
-
 /* bas de page */
 
 footer {
@@ -633,18 +496,6 @@ footer img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* formulaire de contact */
 
 fieldset {
@@ -657,4 +508,32 @@ fieldset {
     border: 2px solid purple;
     background-color: #FAB2B0;
     color: purple;
+}
+
+
+@media screen and (max-width: 1030px) {
+
+    main {
+        width: auto;
+    }
+    nav {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding-left: 4px;
+    }
+
+    nav a {
+        font-size: 1.1em;
+    }
+
+    nav a:hover {
+        border-bottom: 0;
+    }
 }
