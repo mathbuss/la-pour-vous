@@ -95,12 +95,6 @@ video {
 
 
 
-
-
-
-
-
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -163,20 +157,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Eléments principaux de la page */
 
 body {}
@@ -189,56 +169,50 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Header */
 
 header {
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     position: fixed;
     width: 100%;
-    height: 12%;
-    top: 0px;
-    left: 0px;
+    max-height: 14%;
+
     z-index: 1;
     padding-bottom: 10px;
 
     background-color: white;
+
     box-shadow: 3px 3px 10px purple;
 }
 
-.master_title {}
+
 
 .logo {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: baseline;
+}
+
+.logo_img {
+    width: 40%;
+    height: 90%;
 }
 
 .logo img {
     width: 59px;
     height: 60px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 header h1 {
 
-    position: absolute;
-    top: 20px;
-    left: 70px;
-
     margin-left: 10px;
+    margin-bottom: 10px;
 
     color: purple;
     font-size: 2.5em;
@@ -248,11 +222,10 @@ header h1 {
 }
 
 header h2 {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
+
 
     margin-left: 5px;
+    margin-top: 15px;
 
     font-weight: normal;
     color: purple;
@@ -262,24 +235,11 @@ header h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Navigation */
 
 nav {
 
-    position: absolute;
-    right: 0;
-    bottom: 0;
+
     margin-right: 15px;
 }
 
@@ -312,38 +272,28 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Bannière */
 
-.banner {
+video {
 
     height: 350px;
-    width: 99%;
+    width: 100%;
     border-radius: 5px;
 
     position: relative;
-    margin-top: 170px;
-    margin-bottom: 25px;
+    margin-top: 135px;
 }
 
-.banner_description {
-    position: absolute;
-    top: 520px;
-    width: 98%;
-    height: 33px;
-    padding-top: 15px;
-    padding-left: 14px;
 
+.banner_description {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+
+    margin-top: -4px;
+    padding-left: 14px;
 
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 4px 4px #1c1a19;
@@ -354,16 +304,21 @@ nav a:hover {
     font-size: 0.8em;
 }
 
+#banner_text {
+
+    margin-top: 15px;
+}
+
 .purple_button {
     height: 25px;
-    position: absolute;
-    right: 55px;
-    bottom: 5px;
+
     background: url('images/fond_violet.jpg') repeat-x;
     border-radius: 5px;
     font-size: 1.1em;
     text-align: right;
     padding: 8px 8px 0px 8px;
+    margin-right: 20px;
+    margin-top: 5px;
 
     color: white;
     text-decoration: none;
@@ -372,13 +327,6 @@ nav a:hover {
 .purple_button img {
     border: 0;
 }
-
-
-
-
-
-
-
 
 
 
@@ -429,6 +377,11 @@ aside {
     padding: 10px 10px 10px 15px;
 }
 
+aside h1 {
+
+    margin-bottom: 10px;
+}
+
 .fleche_bulle {
     position: absolute;
     top: 100px;
@@ -439,11 +392,7 @@ aside {
     text-align: center;
 }
 
-.photo_zozor img {
 
-    margin-top: : 10px;
-    border: 1px solid #181818;
-}
 
 aside img {
     margin-right: 2px;
@@ -451,24 +400,14 @@ aside img {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* bas de page */
 
 footer {
 
-    display: flex;
-    position: absolute;
-    height: 10%;
+    height: 50px;
     width: 100%;
+
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #706b64;
@@ -487,11 +426,11 @@ footer a {
 
 footer img {
 
+    margin-top: 5px;
     margin-left: 19px;
+    height: 20%;
+    width: 20%;
 }
-
-
-
 
 
 
@@ -508,32 +447,4 @@ fieldset {
     border: 2px solid purple;
     background-color: #FAB2B0;
     color: purple;
-}
-
-
-@media screen and (max-width: 1030px) {
-
-    main {
-        width: auto;
-    }
-    nav {
-        width: auto;
-        text-align: left;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        padding-left: 4px;
-    }
-
-    nav a {
-        font-size: 1.1em;
-    }
-
-    nav a:hover {
-        border-bottom: 0;
-    }
 }
