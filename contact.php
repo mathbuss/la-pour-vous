@@ -9,24 +9,10 @@
 
 <body>
     <main>
-        <header>
-            <div class="logo">
-                <img src="images/36880089.jpg" alt="Logo" class="logo_img" />
-                <div>
-                    <h1><a href="homepage.html">Là Pour Vous</a></h1>
-                    <h2>Le service de conciergerie personnelle</h2>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">SERVICE 1</a></li>
-                    <li><a href="#">SERVICE 2</a></li>
-                    <li><a href="#">SERVICE 3</a></li>
-                    <li><a href="#">SERVICE 4</a></li>
-                </ul>
-            </nav>
-        </header>
-        <form method="post" action="traitement.php">
+        <?php 
+        include("header.php") 
+        ?>
+        <form method="post" readonly action="traitement.php">
             <fieldset>
                 <legend>Vos coordonnées</legend>
                 <br>
@@ -44,10 +30,10 @@
                 <br>
                 <label for="message" class="textarea_title">Votre message</label>
                 <br>
-                <textarea rows="5" cols="100" required>
+                <textarea rows="5" cols="100" type="message" name="message" id="message" required>
                 </textarea>
                 <br>
-                <input type="submit" name="envoie" class="submit_button">
+                <input type="submit" class="submit_button">
             </fieldset>
         </form>
         <footer class="footer_contact">

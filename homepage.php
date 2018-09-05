@@ -9,23 +9,9 @@
 
 <body>
     <main>
-        <header>
-            <div class="logo">
-                <img src="images/36880089.jpg" alt="Logo" class="logo_img" />
-                <div>
-                    <h1>Là Pour Vous</h1>
-                    <h2>Le service de conciergerie personnelle</h2>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">SERVICE 1</a></li>
-                    <li><a href="#">SERVICE 2</a></li>
-                    <li><a href="#">SERVICE 3</a></li>
-                    <li><a href="#">SERVICE 4</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php 
+        include("header.php") 
+        ?>
         <video src="" controls poster="images/concierge-image.jpg">
         </video>
         <div class="banner_description">
@@ -50,7 +36,7 @@
             </section>
             <footer>
                 <a href="#">Plan du site</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.php">Contact</a>
                 <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/instagram.jpg" alt="Instagram" /></p>
             </footer>
     </main>
