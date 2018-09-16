@@ -35,7 +35,7 @@
                 </aside>
             </section>
             <footer>
-                <a href="#">Plan du site</a>
+                <a href="sitemap.html">Plan du site</a>
                 <a href="contact.php">Contact</a>
                 <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/instagram.jpg" alt="Instagram" /></p>
             </footer>

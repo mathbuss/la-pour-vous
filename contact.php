@@ -37,7 +37,7 @@
             </fieldset>
         </form>
         <footer class="footer_contact">
-            <a href="#">Plan du site</a>
+            <a href="sitemap.html">Plan du site</a>
             <a href="homepage.html">Retour à l'accueil</a>
             <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/instagram.jpg" alt="Instagram" /></p>
         </footer>
