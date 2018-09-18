@@ -16,13 +16,13 @@
             <fieldset>
                 <legend>Vos coordonnées</legend>
                 <br>
-                <label for="nom">Votre nom </label>
+                <label for="name">Votre nom </label>
                 <br>
-                <input type="text" name="nom" id="nom" autofocus required />
+                <input type="text" name="name" id="name" autofocus required />
                 <br>
-                <label for="prenom">Votre prénom </label>
+                <label for="firstname">Votre prénom </label>
                 <br>
-                <input type="text" name="prenom" id="prenom" required />
+                <input type="text" name="firstname" id="firstname" required />
                 <br>
                 <label for="email">Votre e-mail </label>
                 <br>
@@ -38,8 +38,8 @@
         </form>
         <footer class="footer_contact">
             <a href="sitemap.html">Plan du site</a>
-            <a href="homepage.html">Retour à l'accueil</a>
-            <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/instagram.jpg" alt="Instagram" /></p>
+            <a href="homepage.php">Retour à l'accueil</a>
+            <p><a href="http://www.facebook.fr"><img src="images/facebook.png" alt="Facebook" /></a><a href="http://www.twitter.fr"><img src="images/twitter.png" alt="Twitter" /></a><a href="http://www.instagram.fr"><img src="images/instagram.jpg" alt="Instagram" /></a></p>
         </footer>
     </main>
 </body>

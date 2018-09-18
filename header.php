@@ -8,10 +8,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">SERVICE 1</a></li>
-                    <li><a href="#">SERVICE 2</a></li>
-                    <li><a href="#">SERVICE 3</a></li>
-                    <li><a href="#">SERVICE 4</a></li>
+                    <li><a class="link" href="#">SERVICE 1</a></li>
+                    <li><a class="link" href="#">SERVICE 2</a></li>
+                    <li><a class="link" href="#">SERVICE 3</a></li>
+                    <li><a class="link" href="#">SERVICE 4</a></li>
                 </ul>
             </nav>
         </header>
